@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.prepare_command = <<-CMD
       echo 'fetching opus.xcframework'
-      curl -OL 'https://diyalog.im/app/pkgs/ios_frameworks/opus/1.3/opus.zip'
+      curl -OL 'https://diyalog.im/releases/opus/1.3/opus.zip'
       rm -fr 'opus.xcframework'
       echo 'unzipping opus.xcframework'
       unzip -o -q opus.zip
