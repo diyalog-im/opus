@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'opus'
-  s.version          = '1.3'
+  s.version          = '1.4'
   s.summary          = 'Opus framework for DiyalogEngine.'
   s.homepage         = 'https://github.com/diyalog-im/opus'
   s.license          = { :type => 'https://opus-codec.org/license/', :file => 'LICENSE' }
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.prepare_command = <<-CMD
       echo 'fetching opus.xcframework'
-      curl -OL 'https://diyalog.im/releases/opus/1.3/opus.zip'
+      curl -OL 'https://diyalog.im/releases/opus/1.4/opus.zip'
       rm -fr 'opus.xcframework'
       echo 'unzipping opus.xcframework'
       unzip -o -q opus.zip
